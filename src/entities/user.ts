@@ -3,8 +3,8 @@ import { Location } from "../types/types";
 
 export default class User {
 	constructor(
-		private readonly name: string,
-		private readonly location: Location,
+		public readonly name: string,
+		public readonly location: Location,
 	) { }
 
 	toString(): string {

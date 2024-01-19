@@ -1,10 +1,10 @@
-import { Location } from "src/types/types";
+import { Location } from "../types/types";
 
 export default class Company {
 	constructor(
-		private readonly name: string,
-		private readonly catchPhrase: string,
-		private readonly location: Location,
+		public readonly name: string,
+		public readonly catchPhrase: string,
+		public readonly location: Location,
 	) { }
 
 	toString(): string {
