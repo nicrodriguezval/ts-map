@@ -7,7 +7,12 @@ export default class Company {
 		public readonly location: Location,
 	) { }
 
-	toString(): string {
-		return `Company: ${this.name} - ${this.catchPhrase} - ${this.location.lat} - ${this.location.lng}`;
+	toHtml(): string {
+		return `
+			<div>
+				<h2>Company: ${this.name}</h2>
+				<h3>${this.catchPhrase}</h3>
+			</div>
+		`;
 	}
 }

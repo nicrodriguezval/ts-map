@@ -1,4 +1,5 @@
 import { faker } from "@faker-js/faker";
+
 import User from "./entities/user";
 import Company from "./entities/company";
 import Map from "./map";
@@ -23,18 +24,8 @@ function main() {
 	const mapDiv = document.getElementById("map") as HTMLElement;
 	const map = new Map(mapDiv);
 
-	map.addMarker(new google.maps.Marker({
-		position: {
-			lat: user.location.lat,
-			lng: user.location.lng,
-		},
-	}));
-	map.addMarker(new google.maps.Marker({
-		position: {
-			lat: company.location.lat,
-			lng: company.location.lng,
-		},
-	}));
+	map.addMarker(user);
+	map.addMarker(company);
 }
 
 main();

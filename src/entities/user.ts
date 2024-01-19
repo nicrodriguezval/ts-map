@@ -7,7 +7,11 @@ export default class User {
 		public readonly location: Location,
 	) { }
 
-	toString(): string {
-		return `User: ${this.name} is at ${this.location.lat}, ${this.location.lng}`;
+	toHtml(): string {
+		return `
+			<div>
+				<h2>User: ${this.name}</h2>
+			</div>
+		`;
 	}
 }
