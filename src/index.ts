@@ -2,6 +2,7 @@ import { faker } from "@faker-js/faker";
 import User from "./entities/user";
 import Company from "./entities/company";
 
+
 function main() {
 	const user = new User(
 		faker.person.fullName(),
@@ -21,6 +22,7 @@ function main() {
 
 	console.log(user.toString());
 	console.log(company.toString());
+	console.log(google);
 }
 
 main();
