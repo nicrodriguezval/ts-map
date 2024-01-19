@@ -1,6 +1,6 @@
-import { Location } from "../types/types";
+import { Location, Mappable } from "../types/types";
 
-export default class Company {
+export default class Company implements Mappable {
 	constructor(
 		public readonly name: string,
 		public readonly catchPhrase: string,

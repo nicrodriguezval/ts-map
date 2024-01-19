@@ -1,7 +1,7 @@
-import { Location } from "../types/types";
+import { Location, Mappable } from "../types/types";
 
 
-export default class User {
+export default class User implements Mappable {
 	constructor(
 		public readonly name: string,
 		public readonly location: Location,
