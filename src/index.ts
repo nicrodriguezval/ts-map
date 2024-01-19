@@ -22,7 +22,17 @@ function main() {
 
 	console.log(user.toString());
 	console.log(company.toString());
-	console.log(google);
+
+	new google.maps.Map(
+		document.getElementById("map") as HTMLElement,
+		{
+			zoom: 1,
+			center: {
+				lat: 0,
+				lng: 0,
+			}
+		},
+	);
 }
 
 main();
